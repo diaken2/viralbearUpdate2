@@ -29,7 +29,7 @@ app.use(express.static('mrssFiles'));
 app.use(function(req, res, next) {
 
 
-  res.header("Access-Control-Allow-Origin","*"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin","https://viralbear.media"); // update to match the domain you will make the request from
       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
       next();
   
@@ -2012,7 +2012,7 @@ creditMrss=`Credit to: ${creditTo}`
 
 const start=async()=>{
     try{
-        await mongoose.connect('mongodb+srv://kenan:2002azer@cluster0.j86rtdi.mongodb.net/?retryWrites=true&w=majority',{})
+        await mongoose.connect('mongodb+srv://admin:k9logpHTmwIWtR17@cluster0.tdvhizy.mongodb.net/?retryWrites=true&w=majority',{})
         app.listen(PORT,()=>{
             console.log("Server has been launched on PORT", PORT)
         })
